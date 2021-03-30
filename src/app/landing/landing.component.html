@@ -1,0 +1,106 @@
+<main>
+    <div class="container">
+        <section class="welcome_section">
+          <h1>WELCOME TO <span>SOUL</span></h1>
+          <p class="home_text m-0">Vegetarian Thali Restuarant with amazing dining and take away service.</p>
+          <div class="button_grp ">
+            <div class="buttons mb-4 mt-5">
+                DINE IN
+              </div>
+              <div class="buttons mb-5">
+                 TAKE AWAY
+              </div>
+          </div>
+        </section>
+    </div>
+    <div class="container bg-light py-5">
+        <section class="offers">
+            <div class="row">
+                <div class="col-12">
+                 <p class="offer_title mt-0 mb-1">FIND OUR OFFERS</p>
+                 <p class="mt-0 mb-1 amazing">Amazing</p>
+                 <p class="Month my-0" >Offers of the Month</p>
+                </div>
+                <div class="col-12 pt-3 ">
+                 <div>
+                     <owl-carousel-o [options]="customOptions">
+                         <ng-container *ngFor="let slide of offerData">
+                             <ng-template carouselSlide [id]="slide.id">
+                                 <div class="slide" >
+                                     <img [src]="slide.src">
+                                 </div>
+                             </ng-template>
+                         </ng-container>
+                     </owl-carousel-o>
+                 </div>
+                 </div>
+            </div>
+         </section>
+        
+    </div>
+    <div class="container">
+        <section class="menu py-5">
+            <div class="row">
+                <div class="col-12 ">
+                 <p class="offer_title mt-0 mb-1">FIND OUR MENU</p>
+                 <p class="mt-0 mb-1 amazing">Amazing</p>
+                 <p class="Month my-0" >Dishes</p>
+                </div>
+                <div class="col-12 pt-3">
+                   <div class="row">
+                       <div class="col-12 col-lg-3" *ngFor = "let data of dishArr">
+                        <div class="card mb-3" [ngStyle]="{'background-image': 'url(' + data.src + ')'}" >
+                            <div class="card-bg">
+                             <div class="card-block">
+                               <h3 class="card-title">Desserts</h3>
+                                <p class="card-text">{{data.name}}</p>
+                              </div>
+                              </div>
+                          </div>
+                       </div>
+                   </div>
+                 </div>
+            </div>
+         </section>
+    </div>
+    <div class="container bg-light py-5">
+        <section class="offers">
+            <div class="row">
+                <div class="col-12">
+                 <p class="offer_title mt-0 mb-1">WHO WE ARES</p>
+                 <p class="mt-0 mb-1 amazing">What Our</p>
+                 <p class="Month my-0" >Customers <span style="font-weight: 300;">Say</span></p>
+                </div>
+                <div class="col-12 pt-3 ">
+                 <div>
+                     <owl-carousel-o [options]="customOptions">
+                         <ng-container *ngFor="let slide of feedbackData">
+                             <ng-template carouselSlide [id]="slide.id">
+                                  <div class=" feedback p-4">
+                                     <div>
+                                         <div class="message">
+                                             {{slide.message}}
+                                         </div>
+                                         <div class="d-flex mb-3">
+                                            <img class="star " src="../../assets/images/star.png" alt="">
+                                            <img class="star" src="../../assets/images/star.png" alt="">
+                                            <img class="star" src="../../assets/images/star.png" alt="">
+                                            <img class="star" src="../../assets/images/star.png" alt="">
+                                         </div>
+                                         <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi libero at asperiores, ullam cum atque doloremque, deserunt debitis cumque veniam, tempore pariatur aspernatur voluptate recusandae amet repellendus quasi est! Quis!</p>
+                                         <div>
+                                            <img [src]="slide.src" alt="">
+                                            <p class="user-name">{{slide.name}}</p>
+                                         </div>
+                                     </div>
+                                  </div>
+                             </ng-template>
+                         </ng-container>
+                     </owl-carousel-o>
+                 </div>
+                 </div>
+            </div>
+         </section>
+        
+    </div>
+</main>

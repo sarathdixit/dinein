@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
+
+main {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+h1 {
+    padding: 27px 27px 11px 27px;
+    font-weight: 400;
+    margin: 0;
+    font-size: 40px;
+    span {
+        color:#f4c613;
+        font-weight: 600;
+    }
+}
+.home_text {
+    padding: 0 27px;
+
+}
+.button_grp {
+    padding:  27px;
+    width: 100%;
+
+}
+.buttons {
+    border: solid 1px black;
+    border-radius: 50px;
+    padding: 10px 40px ;
+    font-weight: 600;
+    text-align: center;
+}
+
+.offers {
+    padding: 0 27px;
+}
+.offer_title {
+    color: #f4c613;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.amazing {
+    
+    font-size: 27px;
+
+}
+.Month {
+    font-size: 27px;
+    font-weight: bold;
+}
+.menu {
+    padding: 0 27px;
+}
+
+
+// card css
+
+.card {
+    display: block;
+    position: relative;
+    background-image: url('../../assets/images/Menu/001.jpg');
+    box-shadow: 0 12px 12px -4px rgba(0,0,0,0.24);
+    transition: all .4s cubic-bezier(0.4, 0.0, 0.2, 1);;
+    border: 1px solid #333;
+    border-radius: 2px;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.card::after {
+  content: "";
+  background: url(https://www.placehold.it/400x600);
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  width: auto;
+  height: 100%;
+}
+
+.card-title {
+    font-family: 'Raleway', sans-serif;
+  padding: 0 16px;
+  font-weight: 600;
+  color: #f4c613;
+}
+
+
+.card-block {
+  text-align: center;
+  padding: 16px;
+  margin-top: 10%;
+}
+
+.card-bg {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transition: .4s ease;
+}
+
+.card-text {
+    font-family: 'Raleway', sans-serif;
+
+  font-size: 20px;
+  font-family: 'Lato';
+  font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #ffffff;
+}
+
+.card:hover {
+    box-shadow: 0 28px 40px -12px rgba(0,0,0,0.24);
+    transform: scale(1.05);
+}
+
+.card:hover .card-bg {
+	opacity: .8;
+}
+
+.card:hover ::after {
+  opacity: 0;
+}
+
+// 
+
+.feedback {
+    background-color: #f4c613;
+    .message {
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .star {
+        width: 15px;
+    }
+    .description {
+        color: white;
+        font-size: 14px;
+    }
+    .user-name {
+        font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+    }
+}
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .button_grp {
+        width: 300px;
+        margin: auto;
+    }
+    .card {
+        height: 600px;
+
+    }
+    .card-block {
+        margin-top: 20%;
+    }
+    .card-title {
+        font-size: 50px!important;
+    }
+    .card-text {
+        font-size: 25px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .feedback .message{
+        font-size: 27px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .card {
+        height: 209px;
+    }
+    .card-title {
+        font-size: 30px !important;
+    }
+    
+    .message {
+        font-size: 31px !important;
+    }
+}
