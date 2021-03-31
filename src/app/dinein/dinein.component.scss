@@ -1,0 +1,51 @@
+.offers {
+    padding: 0 27px;
+}
+.offer_title {
+    color: #f4c613;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.amazing {
+    
+    font-size: 27px;
+
+}
+.Month {
+    font-size: 27px;
+    font-weight: bold;
+}
+.menu {
+    padding: 0 27px;
+}
+
+.text-rotation {
+    display: flex;
+    position: absolute;
+    bottom: 37%;
+    }
+    .rotateable {
+        transform: rotate(
+            -90deg
+            );
+                text-align: center;
+                display: flex;
+                align-items: flex-end;
+    }
+    .edge-text {
+        position: relative;
+        left: -26px;
+        .amazing {
+            font-size: 32px;
+        }
+        .Month {
+            font-size: 38px;
+        }
+    }
+    .about-txt {
+        position: absolute;
+        top: 74%;
+    }
+
+    

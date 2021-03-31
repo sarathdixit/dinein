@@ -56,23 +56,32 @@ export class LandingComponent implements OnInit {
   public dishArr = [
     {
       src: '../../assets/images/Menu/001.jpg',
-      name: 'Rasmalai'
+      name: 'Rasmalai',
+      type: 'Desserts'
     },
     {
       src: '../../assets/images/Menu/022.jpg',
-      name: 'Palak Panner'
+      name: 'Palak Panner',
+      type: 'Curries'
+
     },
     {
       src: '../../assets/images/Menu/020.jpg',
-      name: 'Aloo Parata'
+      name: 'Aloo Parata',
+      type: 'Roti'
+
     },
     {
       src: '../../assets/images/Menu/021.jpg',
-      name: 'Roti'
+      name: 'Pulka',
+      type: 'Roti'
+
     },
     {
       src: '../../assets/images/Menu/016.jpg',
-      name: 'Biriyani'
+      name: 'Biriyani',
+      type: 'Rice'
+
     }
   ]
 

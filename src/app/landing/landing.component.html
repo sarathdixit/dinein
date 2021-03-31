@@ -1,59 +1,73 @@
 <main>
     <div class="container">
-        <section class="welcome_section">
+        <section class="welcome_section ">
           <h1>WELCOME TO <span>SOUL</span></h1>
           <p class="home_text m-0">Vegetarian Thali Restuarant with amazing dining and take away service.</p>
           <div class="button_grp ">
-            <div class="buttons mb-4 mt-5">
+            <div class="buttons mb-4 mt-5 ">
+                TAKE AWAY
+             </div>
+            <div class="buttons mb-5" routerLink = "/dinein">
                 DINE IN
               </div>
-              <div class="buttons mb-5">
-                 TAKE AWAY
-              </div>
+
           </div>
         </section>
     </div>
-    <div class="container bg-light py-5">
+<div class="bg-light">
+    <div class="container  py-5">
         <section class="offers">
             <div class="row">
-                <div class="col-12">
-                 <p class="offer_title mt-0 mb-1">FIND OUR OFFERS</p>
-                 <p class="mt-0 mb-1 amazing">Amazing</p>
-                 <p class="Month my-0" >Offers of the Month</p>
+                <div class="col-12 col-lg-6 ">
+                    <div class="text-rotation">
+                        <div class="rotateable">
+                            <p class="offer_title mt-0 mb-1 mb-lg-5">FIND OUR OFFERS</p>
+                        </div>
+                        <div class="edge-text">
+                            <p class="mt-0 mb-1 amazing">Amazing</p>
+                            <p class="Month my-0" >Offers of the Month</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 pt-3 ">
+                <div class="col-12 col-lg-6 pt-3 ">
                  <div>
-                     <owl-carousel-o [options]="customOptions">
-                         <ng-container *ngFor="let slide of offerData">
-                             <ng-template carouselSlide [id]="slide.id">
-                                 <div class="slide" >
-                                     <img [src]="slide.src">
-                                 </div>
-                             </ng-template>
-                         </ng-container>
-                     </owl-carousel-o>
+                    <carousel [loop]="true" autoplay="true" height="300" cellsToShow="2">
+                        <div class="carousel-cell" *ngFor="let slide of offerData">
+                            <img [src]="slide.src">
+                        </div>
+                    </carousel>
+                    
+
                  </div>
                  </div>
             </div>
          </section>
         
     </div>
+</div>
     <div class="container">
-        <section class="menu py-5">
+        <section class="menu py-5" style="position: relative;">
             <div class="row">
-                <div class="col-12 ">
-                 <p class="offer_title mt-0 mb-1">FIND OUR MENU</p>
-                 <p class="mt-0 mb-1 amazing">Amazing</p>
-                 <p class="Month my-0" >Dishes</p>
+                <div class="col-12 mb-lg-5">
+                    <div class="text-rotation" style="position:relative;top:0">
+                        <div class="rotateable">
+                            <p class="offer_title mt-0 mb-1 mb-lg-5">FIND OUR Menu</p>
+                        </div>
+                        <div class="edge-text">
+                            <p class="mt-0 mb-1 amazing">Amazing</p>
+                            <p class="Month my-0" >Dishes</p>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-12 pt-3">
                    <div class="row">
-                       <div class="col-12 col-lg-3" *ngFor = "let data of dishArr">
+                       <div class="col-12 col-lg-4" *ngFor = "let data of dishArr">
                         <div class="card mb-3" [ngStyle]="{'background-image': 'url(' + data.src + ')'}" >
                             <div class="card-bg">
                              <div class="card-block">
-                               <h3 class="card-title">Desserts</h3>
-                                <p class="card-text">{{data.name}}</p>
+                               <h3 class="card-title">{{data.type | uppercase}}</h3>
+                                <p class="card-text">{{data.name | uppercase}}</p>
                               </div>
                               </div>
                           </div>
@@ -63,44 +77,237 @@
             </div>
          </section>
     </div>
-    <div class="container bg-light py-5">
-        <section class="offers">
-            <div class="row">
-                <div class="col-12">
-                 <p class="offer_title mt-0 mb-1">WHO WE ARES</p>
-                 <p class="mt-0 mb-1 amazing">What Our</p>
-                 <p class="Month my-0" >Customers <span style="font-weight: 300;">Say</span></p>
-                </div>
-                <div class="col-12 pt-3 ">
-                 <div>
-                     <owl-carousel-o [options]="customOptions">
-                         <ng-container *ngFor="let slide of feedbackData">
-                             <ng-template carouselSlide [id]="slide.id">
-                                  <div class=" feedback p-4">
-                                     <div>
-                                         <div class="message">
-                                             {{slide.message}}
-                                         </div>
-                                         <div class="d-flex mb-3">
-                                            <img class="star " src="../../assets/images/star.png" alt="">
-                                            <img class="star" src="../../assets/images/star.png" alt="">
-                                            <img class="star" src="../../assets/images/star.png" alt="">
-                                            <img class="star" src="../../assets/images/star.png" alt="">
-                                         </div>
-                                         <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi libero at asperiores, ullam cum atque doloremque, deserunt debitis cumque veniam, tempore pariatur aspernatur voluptate recusandae amet repellendus quasi est! Quis!</p>
+    <div class="bg-light">
+        <div class="container bg-light py-5">
+            <section class="offers">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                    
+    
+                        <div class="text-rotation" >
+                            <div class="rotateable">
+                                <p class="offer_title mt-0 mb-1 mb-lg-5">WHO WE ARES</p>
+                            </div>
+                            <div class="edge-text">
+                                <p class="mt-0 mb-1 amazing">What Our</p>
+                                <p class="Month my-0" >Customers</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="col-12 pt-3 col-lg-8">
+                     <div>
+                         <!-- <owl-carousel-o [options]="customOptions">
+                             <ng-container *ngFor="let slide of feedbackData">
+                                 <ng-template carouselSlide [id]="slide.id">
+                                      <div class=" feedback p-4">
                                          <div>
-                                            <img [src]="slide.src" alt="">
-                                            <p class="user-name">{{slide.name}}</p>
+                                             <div class="message">
+                                                 {{slide.message}}
+                                             </div>
+                                             <div class="d-flex mb-3">
+                                                <img class="star " src="../../assets/images/star.png" alt="">
+                                                <img class="star" src="../../assets/images/star.png" alt="">
+                                                <img class="star" src="../../assets/images/star.png" alt="">
+                                                <img class="star" src="../../assets/images/star.png" alt="">
+                                             </div>
+                                             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi libero at asperiores, ullam cum atque doloremque, deserunt debitis cumque veniam, tempore pariatur aspernatur voluptate recusandae amet repellendus quasi est! Quis!</p>
+                                             <div>
+                                                <img [src]="slide.src" alt="">
+                                                <p class="user-name">{{slide.name}}</p>
+                                             </div>
                                          </div>
-                                     </div>
-                                  </div>
-                             </ng-template>
-                         </ng-container>
-                     </owl-carousel-o>
-                 </div>
-                 </div>
-            </div>
-         </section>
-        
+                                      </div>
+                                 </ng-template>
+                             </ng-container>
+                         </owl-carousel-o> -->
+    
+                         <carousel [loop]="true" autoplay="true" height="300" cellsToShow="1">
+                            <div class="carousel-cell" *ngFor="let slide of feedbackData">
+                                <div class=" feedback p-4">
+                                    <div>
+                                        <div class="message">
+                                            {{slide.message}}
+                                        </div>
+                                        <div class="d-flex mb-3">
+                                           <img class="star " src="../../assets/images/star.png" alt="">
+                                           <img class="star" src="../../assets/images/star.png" alt="">
+                                           <img class="star" src="../../assets/images/star.png" alt="">
+                                           <img class="star" src="../../assets/images/star.png" alt="">
+                                        </div>
+                                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi libero at asperiores, ullam cum atque doloremque, deserunt debitis cumque veniam, tempore pariatur aspernatur voluptate recusandae amet repellendus quasi est! Quis!</p>
+                                        <div class="d-lg-flex ">
+                                            <div class="user_wrapper mr-lg-3">
+                                                
+                                                <img [src]="slide.src" class="user-img" alt="">
+                                            </div>
+                                           <p class="user-name">{{slide.name}}</p>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </carousel>
+                     </div>
+                     </div>
+                </div>
+             </section>
+            
+        </div>
     </div>
+
+<div class="container  py-5">
+    <section class="combo mb-5">
+        <div class="text-center mb-5">
+            <p class="customer-text">LOVELY CUSTOMERS</p>
+            <p class="thali-text">Thali combos of this Month</p>
+        </div>
+        <div class="mt-2">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card buy-card">
+                        <div class="card-body">
+                           <p class="combo-name">Thali Combo for 1</p>
+                           <hr>
+                           <div class="row">
+                               <div class="col-5">
+                                   <p class="value">INR 150 </p>
+                                   <span>Month</span>
+                               </div>
+                               <div class="col-7">
+                                  <p>You will get all these awesome service and dishes with this great price. order it now!</p>
+                               </div>
+                           </div>
+                           
+                           <hr>
+                           <div class="mb-5">
+                            <div class="d-flex">
+                             <i-feather name="check"></i-feather>
+                             <div class="ml-2">
+                                 2 Rotis & 1 curry
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <i-feather name="check"></i-feather>
+                                <div class="ml-2">
+                                    Biryani
+                                   </div>
+                               </div>
+                               <div class="d-flex">
+                                <i-feather name="check"></i-feather>
+                                <div class="ml-2">
+                                    1 Dessert
+                                   </div>
+                               </div>
+                               <div class="d-flex">
+                                <i-feather name="check"></i-feather>
+                                <div class="ml-2">
+                                    Free Delivery after 120 Rupees
+                                </div>
+                               </div>
+
+                        </div>
+                        <div class="order">ORDER NOW</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card buy-card secondcard">
+                        <div class="card-body">
+                           <p class="combo-name">Family Thali combo</p>
+                           <hr>
+                           <div class="row">
+                               <div class="col-5">
+                                   <p class="value">INR 500 </p>
+                                   <span>Month</span>
+                               </div>
+                               <div class="col-7">
+                                  <p>You will get all these awesome service and dishes with this great price. order it now!</p>
+                               </div>
+                           </div>
+                           
+                           <hr>
+                           <div class="mb-5">
+                            <div class="d-flex">
+                             <i-feather name="check"></i-feather>
+                             <div class="ml-2">
+                                 Free Drink
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <i-feather name="check"></i-feather>
+                                <div class="ml-2">
+                                    5 types of Chaats
+                                   </div>
+                               </div>
+                               <div class="d-flex">
+                                <i-feather name="check"></i-feather>
+                                <div class="ml-2">
+                                    2 Roties & Curries
+                                   </div>
+                               </div>
+                               <div class="d-flex">
+                                <i-feather name="check"></i-feather>
+                                <div class="ml-2">
+                                    Biryani & 2 Desserts
+                                </div>
+                               </div>
+
+                        </div>
+                        <div class="order">ORDER NOW</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card buy-card">
+                        <div class="card-body">
+                           <p class="combo-name">Thali Combo for 2</p>
+                           <hr>
+                           <div class="row">
+                               <div class="col-5">
+                                   <p class="value">INR 150 </p>
+                                   <span>Month</span>
+                               </div>
+                               <div class="col-7">
+                                  <p>You will get all these awesome service and dishes with this great price. order it now!</p>
+                               </div>
+                           </div>
+                           
+                           <hr>
+                           <div class="mb-5">
+                            <div class="d-flex">
+                             <i-feather name="check"></i-feather>
+                             <div class="ml-2">
+                                Free Delivery Charge
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <i-feather name="check"></i-feather>
+                                <div class="ml-2">
+                                    4 Rotis & 4 curries                                   </div>
+                               </div>
+                               <div class="d-flex">
+                                <i-feather name="check"></i-feather>
+                                <div class="ml-2">
+                                    Desserts                                   </div>
+                               </div>
+                               <div class="d-flex">
+                                <i-feather name="check"></i-feather>
+                                <div class="ml-2">
+                                    Free Drink
+                                </div>
+                               </div>
+
+                        </div>
+                        <div class="order">ORDER NOW</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    
 </main>
