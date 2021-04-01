@@ -17,6 +17,14 @@ import { MenuComponent } from './menu/menu.component';
 import { ShareService } from './share/share.service';
 import { CartComponent } from './cart/cart.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgwWowModule } from 'ngx-wow';
+import { NgwWowService } from 'ngx-wow';
+import { PaymentComponent } from './payment/payment.component';
+import { PaymentsuccessComponent } from './paymentsuccess/paymentsuccess.component';
+import { BookingComponent } from './booking/booking.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +36,9 @@ import { CartComponent } from './cart/cart.component';
     ContactComponent,
     MenuComponent,
     CartComponent,
+    PaymentComponent,
+    PaymentsuccessComponent,
+    BookingComponent,
     
   ],
   imports: [
@@ -35,9 +46,11 @@ import { CartComponent } from './cart/cart.component';
     AppRoutingModule,
     CarouselModule ,
     IconsModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    BrowserAnimationsModule,
+    NgwWowModule
   ],
-  providers: [ShareService],
+  providers: [ShareService,NgwWowService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

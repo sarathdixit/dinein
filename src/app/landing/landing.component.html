@@ -1,6 +1,6 @@
 <main>
     <div class="container">
-        <section class="welcome_section ">
+        <section class="welcome_section wow animated fadeIn"  data-wow-delay="0.5s">
           <h1>WELCOME TO <span>SOUL</span></h1>
           <p class="home_text m-0">Vegetarian Thali Restuarant with amazing dining and take away service.</p>
           <div class="button_grp ">
@@ -18,7 +18,7 @@
     <div class="container  py-5">
         <section class="offers">
             <div class="row">
-                <div class="col-12 col-lg-6 ">
+                <div class="col-12 col-lg-6 wow animated slideInLeft ">
                     <div class="text-rotation">
                         <div class="rotateable">
                             <p class="offer_title mt-0 mb-1 mb-lg-5">FIND OUR OFFERS</p>
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 pt-3 ">
+                <div class="col-12 col-lg-6 pt-3 wow animated slideInRight">
                  <div>
                     <carousel [loop]="true" autoplay="true" height="300" cellsToShow="2">
                         <div class="carousel-cell" *ngFor="let slide of offerData">
@@ -47,7 +47,7 @@
     <div class="container amazing-dishes">
         <section class="menu py-5" style="position: relative;">
             <div class="row">
-                <div class="col-12 mb-lg-5">
+                <div class="col-12 mb-lg-5 wow animated slideInLeft">
                     <div class="text-rotation" style="position:relative;top:0">
                         <div class="rotateable">
                             <p class="offer_title mt-0 mb-1 mb-lg-5">FIND OUR Menu</p>
@@ -59,7 +59,7 @@
                     </div>
 
                 </div>
-                <div class="col-12 pt-3">
+                <div class="col-12 pt-3 wow animated fadeInUp">
                    <div class="row">
                        <div class="col-12 col-lg-4" *ngFor = "let data of dishArr">
                         <div class="card mb-3" [ngStyle]="{'background-image': 'url(' + data.src + ')'}" >
@@ -80,7 +80,7 @@
         <div class="container bg-light py-5">
             <section class="offers">
                 <div class="row">
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4 wow animated slideInLeft">
                     
     
                         <div class="text-rotation" >
@@ -162,7 +162,7 @@
         </div>
         <div class="mt-2">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 wow animated slideInLeft">
                     <div class="card buy-card">
                         <div class="card-body">
                            <p class="combo-name">Thali Combo for 1</p>
@@ -210,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 wow animated fadeInUp">
                     <div class="card buy-card secondcard">
                         <div class="card-body">
                            <p class="combo-name">Family Thali combo</p>
@@ -258,7 +258,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 wow animated slideInRight">
                     <div class="card buy-card">
                         <div class="card-body">
                            <p class="combo-name">Thali Combo for 2</p>

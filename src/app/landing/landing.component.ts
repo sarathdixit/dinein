@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
+
+declare var WOW: any;
+
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
@@ -115,6 +118,8 @@ export class LandingComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(WOW);
+    
   }
 
 }

@@ -1,40 +1,68 @@
+#booking-right {
+    padding: 25px 30px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 50%;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#booking-right h4 {
+    font-size: 24px;
+    margin: 22px 0;
+    color: #f4c613;
+}
+
+#booking-right p {
+    margin-bottom: 25px;
+}
+
+#booking-right form .form-control {
+    font-family: "Open Sans", sans-serif;
+    padding: 10px 15px;
+    
+    font-size: 12px;
+    line-height: 24px;
+}
+
+#booking-right form textarea.form-control {
+    min-height: 300px;
+}
+
+/* Adjusting the shadow of the modal content - also removing border radius */
+.modal-content{
+  /*  box-shadow: 0 0 5px rgba(0, 0, 0, .5); */
+    border-radius: 0;
+  }
+  
+  /* Removing the border radius on btns just in modal */
+  .modal-content .btn{
+    border-radius: 0;
+  }
+  
+  /* Adjusting  the close button */
+  .close{
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+  .modal-header .close{
+    margin-top: -10px;
+  }
+
+
+ 
 
 
 /* =========================================
                 Contact
 ============================================ */
 
-section {
-    min-height: 100vh;
-}
-.btn {
-    background: #f4c613;
-    border-radius: 20px;
-    padding: 6px 40px;
-}
-/* Contact Left */
-#contact-left {
-    text-align: center;
-}
-.vertical-heading  {
-   text-align: center;
-    h5 {
-        color: #f4c613;
-        
 
-    } 
-    h2 {
-        text-align: left;
-        position: relative;
-        left: 66px;
-        top: 23px;
-        font-size: 48px;
-        font-weight: 100;
-    }
-}
-form h4 {
-    color: #f4c613;
-}
+/* Contact Left */
+
 #contact-left p {
     margin: 25px 0 20px 0;
 }
@@ -95,34 +123,5 @@ ul.office-details li i {
 
 #contact-right form textarea.form-control {
     min-height: 164px;
-}
-
-
-@media only screen and (min-width: 1200px) {
-    .vertical-heading h5 {
-        color: #f4c613;
-        font-size: 14px;
-        font-weight: 500;
-        text-transform: uppercase;
-        word-spacing: 9px;
-        display: inline-block;
-        transform: rotate(
-    -90deg
-    );
-        position: absolute;
-        top: 78px;
-        left: 0;
-    }
-    #contact-left {
-        text-align: left;
-    }
-    .vertical-heading {
-        h2 {
-            text-align: left;
-            position: relative;
-            left: 66px;
-            top: 23px;
-        }
-    }
 }
 

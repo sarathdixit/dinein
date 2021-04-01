@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgwWowService } from 'ngx-wow';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'food';
+  constructor(private wowService: NgwWowService) {
+    this.wowService.init();
+  }
 }
