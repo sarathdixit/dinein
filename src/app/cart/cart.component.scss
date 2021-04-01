@@ -1,0 +1,27 @@
+
+section {
+min-height: 100vh;
+}
+.card {
+    width: 50%;
+    margin: auto;
+    margin-top: 12vh;
+}
+img {
+    width: 63px;
+}
+span {
+    font-size: 19px;
+    margin-left: 17px;
+    font-weight: 600;
+}
+.btn {
+    background: #f4c613;
+    color: white;
+}
+.badge {
+    font-size: 10px;
+    position: relative;
+    bottom: 2px;
+    cursor: pointer;
+}

@@ -13,6 +13,9 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { DineinComponent } from './dinein/dinein.component';
 import { ContactComponent } from './contact/contact.component';
+import { MenuComponent } from './menu/menu.component';
+import { ShareService } from './share/share.service';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     DineinComponent,
     ContactComponent,
+    MenuComponent,
+    CartComponent,
     
   ],
   imports: [
@@ -32,7 +37,7 @@ import { ContactComponent } from './contact/contact.component';
     IconsModule,
     IvyCarouselModule
   ],
-  providers: [],
+  providers: [ShareService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,36 @@
+<section>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+               
+                <ng-container *ngIf="cartArr.length != 0; else emptyState">
+                    <div *ngFor="let data of cartArr; let i = index" class="my-2 d-flex justify-content-between align-items-center">
+                        <div>
+                            <img [src]="data.src" alt="">
+                            <span>{{data.name}}</span>
+                            <span class="badge badge-danger" (click) = "removeItem(i)">Remove</span>
+                        </div>
+                        <div>
+                            <p class="m-0">&#x20B9; {{data.price}}</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="my-2 d-flex justify-content-end align-items-center">
+                        <div>
+                            <div class="d-flex">
+                                <p class="m-0 mr-3">Item total</p>
+                                <p class="m-0">&#x20B9; {{totalvalue()}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn  btn-block">Proceed to pay</button>
+                </ng-container>
+                <ng-template #emptyState>
+                   <h3 class="text-center " style="
+                   color: #f4c613;
+               ">Your cart is empty</h3>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,198 @@
+<div class="container menus">
+    
+    <div id="filters" class="button-group"> 
+        <button class="button is-checked" data-filter="*">All</button>
+        <button class="button" data-filter=".metal">Roties</button>
+        <button class="button" data-filter=".transition">Curries</button>
+        <button class="button" data-filter=".alkali">Starters</button>
+    </div>
+    
+    <div class="grid">
+        <!-- 1st -->
+        <div class="element-item  metal " data-category="transition">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../../assets/images/images-zasta/roti-05.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Aloo Paratha</h5>
+                  <p class="card-text">Price : ₹100</p>
+                  <a *ngIf="isIndexAdded(0); else elseState" class="btn btn-light" (click) ="add(0)">Add to cart</a>
+                  <ng-template #elseState>
+                    <a  class="btn btn-success" >Item added</a>
+
+                  </ng-template>
+                </div>
+            </div>
+        </div>
+        <!-- 2nd -->
+        <div class="element-item transition  " data-category="transition">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top"  src="../../assets/images/images-zasta/sub-07.jpg"  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Veg Kadai</h5>
+                  <p class="card-text">Price : ₹150</p>
+                  <a *ngIf="isIndexAdded(1); else elseState" class="btn btn-light" (click) ="add(1)">Add to cart</a>
+                  <ng-template #elseState>
+                    <a  class="btn btn-success" >Item added</a>
+
+                  </ng-template>
+                </div>
+            </div>
+        </div>
+         <!-- 3 -->
+        <div class="element-item alkali  " data-category="post-transition">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../../assets/images/images-zasta/starter-011.jpg"   alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Samosa</h5>
+                  <p class="card-text">Price : ₹150</p>
+                  <a *ngIf="isIndexAdded(2); else elseState" class="btn btn-light" (click) ="add(2)">Add to cart</a>
+                  <ng-template #elseState>
+                    <a  class="btn btn-success" >Item added</a>
+
+                  </ng-template>
+                </div>
+            </div>
+        </div>
+         <!-- 4 -->
+        <div class="element-item  metal " data-category="transition">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../../assets/images/images-zasta/rsz_roti-06.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Butter Naan</h5>
+                  <p class="card-text">Price : ₹100</p>
+                  <a *ngIf="isIndexAdded(3); else elseState" class="btn btn-light" (click) ="add(3)">Add to cart</a>
+                  <ng-template #elseState>
+                    <a  class="btn btn-success" >Item added</a>
+
+                  </ng-template>
+                </div>
+            </div>
+        </div>
+         <!-- 5 -->
+        <div class="element-item transition  " data-category="transition">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../../assets/images/images-zasta/rsz_010.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Dal</h5>
+                  <p class="card-text">Price : ₹150</p>
+                  <a *ngIf="isIndexAdded(4); else elseState" class="btn btn-light" (click) ="add(4)">Add to cart</a>
+                  <ng-template #elseState>
+                    <a  class="btn btn-success" >Item added</a>
+
+                  </ng-template>
+                </div>
+            </div>
+        </div>
+         <!-- 6 -->
+        <div class="element-item  metal " data-category="transition">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../../assets/images/images-zasta/rsz_panroti-01.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Garlic Naan</h5>
+                  <p class="card-text">Price : ₹100</p>
+                  <a *ngIf="isIndexAdded(5); else elseState" class="btn btn-light" (click) ="add(5)">Add to cart</a>
+                  <ng-template #elseState>
+                    <a  class="btn btn-success" >Item added</a>
+
+                  </ng-template>
+                </div>
+            </div>
+        </div>
+         <!-- 7 -->
+        <div class="element-item  transition" data-category="alkali">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../../assets/images/images-zasta/sub-08.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Veg. Hyderabadi</h5>
+                  <p class="card-text">Price : ₹250</p>
+                  <a *ngIf="isIndexAdded(6); else elseState" class="btn btn-light" (click) ="add(6)">Add to cart</a>
+                  <ng-template #elseState>
+                    <a  class="btn btn-success" >Item added</a>
+
+                  </ng-template>
+                </div>
+            </div>
+        </div>
+         <!-- 8 -->
+        <div class="element-item transition  " data-category="transition">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../../assets/images/images-zasta/sub-07.jpg" alt="Card image cap">
+
+                <div class="card-body">
+                  <h5 class="card-title">Babycorn Masala</h5>
+                  <p class="card-text">Price : ₹250</p>
+                  <a *ngIf="isIndexAdded(7); else elseState" class="btn btn-light" (click) ="add(7)">Add to cart</a>
+                  <ng-template #elseState>
+                    <a  class="btn btn-success" >Item added</a>
+
+                  </ng-template>
+                </div>
+            </div>
+        </div>
+        <!-- 9 -->
+        <div class="element-item metal  " data-category="transition">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top"  src="../../assets/images/images-zasta/rsz_roti-09.jpg"  alt="Card image cap">
+
+                <div class="card-body">
+                  <h5 class="card-title">Kulcha</h5>
+                  <p class="card-text">Price : ₹150</p>
+                  <a *ngIf="isIndexAdded(8); else elseState" class="btn btn-light" (click) ="add(8)">Add to cart</a>
+                  <ng-template #elseState>
+                    <a  class="btn btn-success" >Item added</a>
+
+                  </ng-template>
+                </div>
+            </div>
+        </div>
+         <!-- 10 -->
+        <div class="element-item alkali  " data-category="transition">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../../assets/images/images-zasta/rsz_starter-07.jpg" alt="Card image cap">
+
+                <div class="card-body">
+                  <h5 class="card-title">Spinach Cutlets</h5>
+                  <p class="card-text">Price : ₹250</p>
+                  <a *ngIf="isIndexAdded(9); else elseState" class="btn btn-light" (click) ="add(9)">Add to cart</a>
+                  <ng-template #elseState>
+                    <a  class="btn btn-success" >Item added</a>
+
+                  </ng-template>
+                </div>
+            </div>
+        </div>
+        <!-- 11 -->
+        <div class="element-item  metal " data-category="transition">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top"   src="../../assets/images/images-zasta/rsz_roti-12.jpg" alt="Card image cap">
+
+                <div class="card-body">
+                  <h5 class="card-title">Stuffed Kulcha</h5>
+                  <p class="card-text">Price : ₹150</p>
+                  <a *ngIf="isIndexAdded(10); else elseState" class="btn btn-light" (click) ="add(10)">Add to cart</a>
+                  <ng-template #elseState>
+                    <a  class="btn btn-success" >Item added</a>
+
+                  </ng-template>
+                </div>
+            </div>
+        </div>
+         <!-- 12 -->
+        <div class="element-item  transition" data-category="metalloid">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../../assets/images/images-zasta/sub-08.jpg" alt="Card image cap">
+
+                <div class="card-body">
+                  <h5 class="card-title">Panner Massala</h5>
+                  <p class="card-text">Price : ₹250</p>
+                  <a *ngIf="isIndexAdded(11); else elseState" class="btn btn-light" (click) ="add(11)">Add to cart</a>
+                  <ng-template #elseState>
+                    <a  class="btn btn-success" >Item added</a>
+
+                  </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</div>
