@@ -23,6 +23,7 @@ import { NgwWowService } from 'ngx-wow';
 import { PaymentComponent } from './payment/payment.component';
 import { PaymentsuccessComponent } from './paymentsuccess/paymentsuccess.component';
 import { BookingComponent } from './booking/booking.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { BookingComponent } from './booking/booking.component';
     IconsModule,
     IvyCarouselModule,
     BrowserAnimationsModule,
-    NgwWowModule
+    NgwWowModule,
+    FormsModule
   ],
   providers: [ShareService,NgwWowService],
   bootstrap: [AppComponent]
