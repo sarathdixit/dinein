@@ -1,6 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { HotelComponent } from './admin/hotel/hotel.component';
+import { KitchenComponent } from './admin/kitchen/kitchen.component';
+import { ReviewComponent } from './admin/review/review.component';
+import { SettingsComponent } from './admin/settings/settings.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { BookingComponent } from './booking/booking.component';
 import { CartComponent } from './cart/cart.component';
 import { ContactComponent } from './contact/contact.component';
@@ -52,6 +58,30 @@ const routes: Routes = [
   {
     path: 'booking',
     component: BookingComponent
+  },
+  {
+    path: 'adminlogin',
+    component: AdminloginComponent
+  },
+  {
+    path:"admin",
+    component:DashboardComponent
+  },
+  {
+    path: 'hotel',
+    component: HotelComponent
+  },
+  {
+    path : 'review',
+    component: ReviewComponent
+  },
+  {
+    path: 'kitchen',
+    component: KitchenComponent
+  },
+  {
+    path : 'settings',
+    component: SettingsComponent
   }
 ];
 

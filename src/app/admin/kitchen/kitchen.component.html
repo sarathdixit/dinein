@@ -1,0 +1,319 @@
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar" style="    z-index: 2344;">
+        <div class="sidebar-header">
+            <h3 style="    position: fixed;
+            width: 251px;">Soul-Resto Dashboard</h3>
+            <strong>SR</strong>
+        </div>
+
+        <ul class="list-unstyled components" style="margin: 85px 0;
+        padding: 25px 1px;    position: fixed;
+    width: 251px;">
+            <li class="active" style=" padding: 18px 0;"   >
+                <a style="margin: 15px 0;margin-left: 28px;" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle dropdwn-toggle">
+                    <i-feather name="grid"></i-feather>
+                    Dashboard
+                </a>
+                <ul class="collapse list-unstyled" id="homeSubmenu" style="background: #1d2531;    margin-top: 18px;">
+                    <li style="    padding: 18px 51px;">
+                        <a routerLink="/admin">Home</a>
+                    </li>
+                </ul>
+            </li>
+            <li style=" padding: 18px 0;">
+                <a style="margin: 15px 0;margin-left: 28px;" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle dropdwn-toggle">
+                    <i-feather name="edit"></i-feather>
+                    App
+                </a>
+                <ul class="collapse list-unstyled" id="pageSubmenu" style="background: #1d2531;    margin-top: 18px;">
+                    <li  style="    padding: 18px 51px;">
+                        <a routerLink="/kitchen">Kitchen</a>
+                    </li>
+                    <li  style="    padding: 18px 51px;">
+                        <a routerLink="/hotel">Restuarant</a>
+                    </li>
+                    <li  style="    padding: 18px 51px;">
+                        <a routerLink="/review">Reviews</a>
+                    </li>
+                </ul>
+            </li>
+            <li style="  padding: 18px 0;">
+                <a style="margin: 15px 0;margin-left: 28px;" href="#pages" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle dropdwn-toggle">
+                    <i-feather name="copy"></i-feather>
+                    Pages
+                </a>
+                <ul class="collapse list-unstyled" id="pages" style="background: #1d2531;    margin-top: 18px;">
+                    <li  style="    padding: 18px 51px;">
+                        <a routerLink="/settings">User Profile</a>
+                    </li>
+                    <li  style="    padding: 18px 51px;">
+                        <a routerLink="/adminlogin">Authentication</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" style="width: 100%;">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light " >
+            <div class="container-fluid">
+                <header class="mb-5">
+                    <nav class="navbar navbar-expand-md navbar-dark fixed-top " style="padding-left: 300px!important;color: #8a909d; background-color: white;     border-bottom: 1px solid #e5e9f2; ">
+                        <div class="container-fluid"> 
+                            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                            </button> -->
+                            <div class="collapse navbar-collapse" id="navbarCollapse" style="justify-content: space-between;">
+                                <form class="d-flex me-auto mb-2 mb-md-0" style="    position: relative;
+                                top: 9px;">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend" style="border: none;
+                                        background-color: transparent;">
+                                          <span class="input-group-text" id="basic-addon1" style="border: none;
+                                          background-color: transparent;"><img src="../../../assets/admin/search.svg" alt=""></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" style="border: none;
+                                        background-color: transparent;">
+                                      </div>
+                                </form>
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item" style="    padding: 0 10px;"> <a class="nav-link active" aria-current="page" href="#"><img src="../../../assets/admin/bell.svg" alt=""></a>
+                                    </li>
+                                    <li class="nav-item" style="    padding: 0 10px;"> <a class="nav-link" routerLink="/settings"><img src="../../../assets/admin/settings.svg" alt=""></a>
+                                    </li>
+                                    <li class="nav-item" style="position: relative; top: 10px;    padding: 0 10px;"> 
+                                    <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="color: #1b223c;
+                                        padding: 0px .5rem;
+                                        font-size: 17px;
+                                        font-weight: 600;">Admin</a> -->
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #1b223c;
+                                            padding: 0px .5rem;
+                                            font-size: 17px;
+                                            font-weight: 600;">
+                                                Admin
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style=" 
+                                            left: -61px;
+                                            top: 43px;
+                                        ">
+                                              <a class="dropdown-item" href="#" style="    color: #8a909d;">admin@gmail.com</a>
+                                              <hr>
+
+                                              <a class="dropdown-item" href="#" style="    color: #8a909d;">Email</a>
+                                              <a class="dropdown-item" href="#" style="    color: #8a909d;">Settings</a>
+                                              <hr>
+                                              <a class="dropdown-item" href="#" style="    color: #8a909d;">Logout</a>
+                                            </div>
+                                          </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+<!-- 
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>Toggle Sidebar</span>
+                </button> -->
+            </div>
+        </nav>
+        <div style="display: block;">
+           <main>
+            <div class="row">
+                <div class="col-12">
+                    <!--  Table -->
+                    <div class="card card-table-border-none recent-orders p-5" id="recent-orders">
+                        <div class="card-header d-flex align-item-center justify-content-between">
+                            <h2>Food Database</h2>
+                            <div class="col-sm-6" style="float:right">
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addModal">Add New Dish</button>
+                            </div>
+                        </div>
+                        <div class="card-body pt-0 pb-5 mt-4">
+                            <table class="table card-table table-responsive table-responsive-large" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Dish Name</th>
+                                        <th class="d-none d-lg-table-cell">Price</th>
+                                        <th class="d-none d-lg-table-cell">Category</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>24541</td>
+                                        <td> <a class="text-dark" href=""> Veg Kadai</a>
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">150</td>
+                                        <td class="d-none d-lg-table-cell">Subzi</td>
+                                        <td> <span class="badge badge-success">Completed</span>
+                                        </td>
+                                        <td> <a href="#editModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit"></i>Edit</a>
+                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete"></i>Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>24541</td>
+                                        <td> <a class="text-dark" href=""> Kulcha</a>
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">100</td>
+                                        <td class="d-none d-lg-table-cell">Roti</td>
+                                        <td> <span class="badge badge-warning">Delayed</span>
+                                        </td>
+                                        <td> <a href="#editModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit"></i>Edit</a>
+                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete"></i>Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>24541</td>
+                                        <td> <a class="text-dark" href=""> Garlic Naan</a>
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">100</td>
+                                        <td class="d-none d-lg-table-cell">Roti</td>
+                                        <td> <span class="badge badge-warning">On Hold</span>
+                                        </td>
+                                        <td> <a href="#editModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit"></i>Edit</a>
+                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete"></i>Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>24541</td>
+                                        <td> <a class="text-dark" href=""> Dal</a>
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">150</td>
+                                        <td class="d-none d-lg-table-cell">Subzi</td>
+                                        <td> <span class="badge badge-success">Completed</span>
+                                        </td>
+                                        <td> <a href="#editModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit"></i>Edit</a>
+                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete"></i>Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>24541</td>
+                                        <td> <a class="text-dark" href=""> Spinach Cutlets</a>
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">100</td>
+                                        <td class="d-none d-lg-table-cell">Starter</td>
+                                        <td> <span class="badge badge-danger">Cancelled</span>
+                                        </td>
+                                        <td> <a href="#editModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit"></i>Edit</a>
+                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete"></i>Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr *ngFor="let item of data; let i = index">
+                                        <td>24541</td>
+                                        <td> <a class="text-dark" href=""> {{item.name}}</a>
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">{{item.price}}</td>
+                                        <td class="d-none d-lg-table-cell">{{item.category}}</td>
+                                        <td> <span class="badge badge-danger">Cancelled</span>
+                                        </td>
+                                        <td> <a href="#editModal" class="edit" data-toggle="modal" (click)="edit(i)"><i class="material-icons" data-toggle="tooltip" title="Edit" ></i>Edit</a>
+                                            <a href="#deleteModal" class="delete" data-toggle="modal" ><i class="material-icons" data-toggle="tooltip" title="Delete"></i>Delete</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </main>      
+        </div>
+          
+    </div>
+</div>
+
+
+
+<div id="addModal" class="modal fade" style="display: none;" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form>
+				<div class="modal-header">
+					<h4 class="modal-title">Add Food</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				</div>
+				<div class="modal-body">
+                   <form >
+                    <div class="form-group">
+						<label>Name</label>
+						<input type="text" class="form-control" name="dishname"  [(ngModel)]="model.dishname" required="">
+					</div>
+					<div class="form-group">
+						<label>Category</label>
+						<input type="text" class="form-control"  name="category" [(ngModel)]="model.category" required="">
+					</div>
+					<div class="form-group">
+						<label>Price</label>
+						<textarea class="form-control"  required="" name="price" [(ngModel)]="model.price"></textarea>
+					</div>
+                   </form>
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+					<input type="submit" class="btn btn-success" value="Add" (click) ="add()">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div id="editModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form>
+				<div class="modal-header">
+					<h4 class="modal-title">Edit Food </h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label>Name</label>
+						<input type="text" class="form-control" name="dishname"  [(ngModel)]="model.dishname"  required="">
+					</div>
+					<div class="form-group">
+						<label>Category</label>
+						<input type="email" class="form-control" name="category" [(ngModel)]="model.category" required="">
+					</div>
+					<div class="form-group">
+						<label>Price</label>
+						<textarea class="form-control" required="" name="price" [(ngModel)]="model.price"></textarea>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+					<input type="submit" class="btn btn-info" value="Save" (click)="saveEdited()">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div id="deleteModal" class="modal fade" style="display: none;" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form>
+				<div class="modal-header">
+					<h4 class="modal-title">Delete Food</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				</div>
+				<div class="modal-body">
+					<p>Are you sure you want to delete these Records?</p>
+					<p class="text-warning"><small>This action cannot be undone.</small>
+					</p>
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+					<input type="submit" class="btn btn-danger" value="Delete"  (click)="deleteIt()" data-dismiss="modal">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

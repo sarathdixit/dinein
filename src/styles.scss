@@ -1,12 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
-@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 
-@import '~animate.css/animate.min';
-@import '~font-awesome/css/font-awesome.css';
+@import "~animate.css/animate.min";
+@import "~font-awesome/css/font-awesome.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap");
 
 * {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.badge-success {
+  color: #fff;
+  background-color: #29cc97;
+  padding: 7px 12px;
+}
+.badge-warning {
+  color: #fff;
+  background-color: #fec400;
+  padding: 7px 12px;
+}
+.badge-danger {
+  color: #ffffff;
+  background-color: #fe5461;
+  padding: 7px 12px;
+}
+.dropdown-toggle::after {
+  color: black;
+}
+.table thead th {
+  vertical-align: bottom;
+  border: none;
+}
+.card-table thead th {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 1.9rem 1.25rem 0;
+  color: #8a909d;
+}
+.card-table tbody tr td:first-child {
+  color: #8a909d;
+}
+.btn-success {
+  color: #fff;
+  background-color: #29cc97;
+  border-color: #29cc97;
+}
+.card-table thead th {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 1.9rem 1.25rem 0;
+  color: #8a909d;
+  width: 200px;
+}
+#sidebar ul li a {
+  text-align: left;
+  color: #a6aab4;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
 }

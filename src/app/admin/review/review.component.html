@@ -1,0 +1,230 @@
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar" style="    z-index: 2344;">
+        <div class="sidebar-header">
+            <h3 style="    position: fixed;
+            width: 251px;">Soul-Resto Dashboard</h3>
+            <strong>SR</strong>
+        </div>
+
+        <ul class="list-unstyled components" style="margin: 85px 0;
+        padding: 25px 1px;    position: fixed;
+    width: 251px;">
+            <li class="active" style=" padding: 18px 0;"   >
+                <a style="margin: 15px 0;margin-left: 28px;" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle dropdwn-toggle">
+                    <i-feather name="grid"></i-feather>
+                    Dashboard
+                </a>
+                <ul class="collapse list-unstyled" id="homeSubmenu" style="background: #1d2531;    margin-top: 18px;">
+                    <li style="    padding: 18px 51px;">
+                        <a routerLink="/admin">Home</a>
+                    </li>
+                </ul>
+            </li>
+            <li style=" padding: 18px 0;">
+                <a style="margin: 15px 0;margin-left: 28px;" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle dropdwn-toggle">
+                    <i-feather name="edit"></i-feather>
+                    App
+                </a>
+                <ul class="collapse list-unstyled" id="pageSubmenu" style="background: #1d2531;    margin-top: 18px;">
+                    <li  style="    padding: 18px 51px;">
+                        <a routerLink="/kitchen">Kitchen</a>
+                    </li>
+                    <li  style="    padding: 18px 51px;">
+                        <a routerLink="/hotel">Restuarant</a>
+                    </li>
+                    <li  style="    padding: 18px 51px;">
+                        <a routerLink="/review">Reviews</a>
+                    </li>
+                </ul>
+            </li>
+            <li style="  padding: 18px 0;">
+                <a style="margin: 15px 0;margin-left: 28px;" href="#pages" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle dropdwn-toggle">
+                    <i-feather name="copy"></i-feather>
+                    Pages
+                </a>
+                <ul class="collapse list-unstyled" id="pages" style="background: #1d2531;    margin-top: 18px;">
+                    <li  style="    padding: 18px 51px;">
+                        <a routerLink="/settings">User Profile</a>
+                    </li>
+                    <li  style="    padding: 18px 51px;">
+                        <a routerLink="/adminlogin">Authentication</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Page Content  -->
+    <div id="content" style="width: 100%;">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light " >
+            <div class="container-fluid">
+                <header class="mb-5">
+                    <nav class="navbar navbar-expand-md navbar-dark fixed-top " style="padding-left: 300px!important;color: #8a909d; background-color: white;     border-bottom: 1px solid #e5e9f2; ">
+                        <div class="container-fluid"> 
+                            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                            </button> -->
+                            <div class="collapse navbar-collapse" id="navbarCollapse" style="justify-content: space-between;">
+                                <form class="d-flex me-auto mb-2 mb-md-0" style="    position: relative;
+                                top: 9px;">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend" style="border: none;
+                                        background-color: transparent;">
+                                          <span class="input-group-text" id="basic-addon1" style="border: none;
+                                          background-color: transparent;"><img src="../../../assets/admin/search.svg" alt=""></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" style="border: none;
+                                        background-color: transparent;">
+                                      </div>
+                                </form>
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item" style="    padding: 0 10px;"> <a class="nav-link active" aria-current="page" href="#"><img src="../../../assets/admin/bell.svg" alt=""></a>
+                                    </li>
+                                    <li class="nav-item" style="    padding: 0 10px;"> <a class="nav-link"routerLink="/settings"><img src="../../../assets/admin/settings.svg" alt=""></a>
+                                    </li>
+                                    <li class="nav-item" style="position: relative; top: 10px;    padding: 0 10px;"> 
+                                    <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="color: #1b223c;
+                                        padding: 0px .5rem;
+                                        font-size: 17px;
+                                        font-weight: 600;">Admin</a> -->
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #1b223c;
+                                            padding: 0px .5rem;
+                                            font-size: 17px;
+                                            font-weight: 600;">
+                                                Admin
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style=" 
+                                            left: -61px;
+                                            top: 43px;
+                                        ">
+                                              <a class="dropdown-item" href="#" style="    color: #8a909d;">admin@gmail.com</a>
+                                              <hr>
+
+                                              <a class="dropdown-item" href="#" style="    color: #8a909d;">Email</a>
+                                              <a class="dropdown-item" href="#" style="    color: #8a909d;">Settings</a>
+                                              <hr>
+                                              <a class="dropdown-item" href="#" style="    color: #8a909d;">Logout</a>
+                                            </div>
+                                          </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+<!-- 
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>Toggle Sidebar</span>
+                </button> -->
+            </div>
+        </nav>
+        <div style="display: block;">
+           <main>
+            <div class="row">
+                <div class="col-xl-3 col-sm-6">
+                    <div class="card card-mini mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-1">71,503</h2>
+                            <p>Negative Reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="card card-mini  mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-1">69,503</h2>
+                            <p>Positive Reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="card card-mini  mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-1">19,503</h2>
+                            <p>Total Reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <!-- Recent Order Table -->
+                    <div class="card card-table-border-none recent-orders p-4" id="recent-orders">
+                        <div class="card-header justify-content-between">
+                            <h2>Recent Reviews</h2>
+                            <div class="date-range-report "> <span></span>
+                            </div>
+                        </div>
+                        <div class="card-body pt-0 pb-5">
+                            <table class="table card-table table-responsive table-responsive-large" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Review ID</th>
+                                        <th>Review</th>
+                                        <th class="d-none d-lg-table-cell">Name</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>541</td>
+                                        <td> <a class="text-dark" href=""> Great service and quality.</a>
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">Abhi.</td>
+                                        <td> <span class="badge badge-success">New</span>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="badge badge-success" data-toggle="modal" data-target="#exampleModal">Reply</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>454</td>
+                                        <td> <a class="text-dark" href=""> Tasty food.</a>
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">Vivek</td>
+                                        <td> <span class="badge badge-warning">Pending</span>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="badge badge-success" data-toggle="modal" data-target="#exampleModal">Reply</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>245</td>
+                                        <td> <a class="text-dark" href=""> Bad Service. Wrong order delivered.</a>
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">Tina</td>
+                                        <td> <span class="badge badge-warning">Sent</span>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="badge badge-success" data-toggle="modal" data-target="#exampleModal">Reply</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>454</td>
+                                        <td> <a class="text-dark" href=""> How to access discount code?</a>
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">Aashi</td>
+                                        <td> <span class="badge badge-success">Completed</span>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="badge badge-success" data-toggle="modal" data-target="#exampleModal">Reply</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </main>      
+        </div>
+          
+    </div>
+</div>

@@ -1,0 +1,30 @@
+main {
+  background-color: #f5f6fa;
+}
+.app-brand {
+  position: relative;
+  display: block;
+  background-color: #1b223c;
+}
+.app-brand .brand-name {
+  color: #ffffff;
+  font-size: 1.12rem;
+  margin-left: 0.94rem;
+  max-width: 170px;
+}
+.app-brand a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 75px;
+  line-height: 75px;
+  width: 250px;
+  transition: width 0.3s ease-in-out;
+  padding-left: 1.56rem;
+}
+
+.form-control {
+  font-size: 14px;
+  height: calc(1.5em + 1.18rem + 2px);
+  padding: 0.59rem 1rem;
+}

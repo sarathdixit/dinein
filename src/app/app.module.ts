@@ -24,6 +24,20 @@ import { PaymentComponent } from './payment/payment.component';
 import { PaymentsuccessComponent } from './paymentsuccess/paymentsuccess.component';
 import { BookingComponent } from './booking/booking.component';
 import { FormsModule } from '@angular/forms';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { ChartsModule } from 'ng2-charts';
+import { BarchartComponent } from './admin/barchart/barchart.component';
+import { DuallineComponent } from './admin/dualline/dualline.component';
+import { ArealineComponent } from './admin/arealine/arealine.component';
+import { LinechartComponent } from './admin/linechart/linechart.component';
+import { PolarComponent } from './admin/polar/polar.component';
+import { RadarComponent } from './admin/radar/radar.component';
+import { SaleschartComponent } from './admin/saleschart/saleschart.component';
+import { HotelComponent } from './admin/hotel/hotel.component';
+import { ReviewComponent } from './admin/review/review.component';
+import { KitchenComponent } from './admin/kitchen/kitchen.component';
+import { SettingsComponent } from './admin/settings/settings.component';
 
 
 @NgModule({
@@ -40,6 +54,19 @@ import { FormsModule } from '@angular/forms';
     PaymentComponent,
     PaymentsuccessComponent,
     BookingComponent,
+    AdminloginComponent,
+    DashboardComponent,
+    BarchartComponent,
+    DuallineComponent,
+    ArealineComponent,
+    LinechartComponent,
+    PolarComponent,
+    RadarComponent,
+    SaleschartComponent,
+    HotelComponent,
+    ReviewComponent,
+    KitchenComponent,
+    SettingsComponent,
     
   ],
   imports: [
@@ -50,7 +77,8 @@ import { FormsModule } from '@angular/forms';
     IvyCarouselModule,
     BrowserAnimationsModule,
     NgwWowModule,
-    FormsModule
+    FormsModule,
+    ChartsModule
   ],
   providers: [ShareService,NgwWowService],
   bootstrap: [AppComponent]
