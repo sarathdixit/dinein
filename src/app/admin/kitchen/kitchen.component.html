@@ -128,11 +128,11 @@
             <div class="row">
                 <div class="col-12">
                     <!--  Table -->
-                    <div class="card card-table-border-none recent-orders p-5" id="recent-orders">
+                    <div class="card card-table-border-none table-striped recent-orders p-5" id="recent-orders">
                         <div class="card-header d-flex align-item-center justify-content-between">
                             <h2>Food Database</h2>
-                            <div class="col-sm-6" style="float:right">
-                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addModal">Add New Dish</button>
+                            <div class="col-sm-6">
+                                <button type="button" class="btn btn-success" data-toggle="modal"  style="float:right" data-target="#addModal">Add New Dish</button>
                             </div>
                         </div>
                         <div class="card-body pt-0 pb-5 mt-4">
@@ -156,8 +156,8 @@
                                         <td class="d-none d-lg-table-cell">Subzi</td>
                                         <td> <span class="badge badge-success">Completed</span>
                                         </td>
-                                        <td> <a href="#editModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit"></i>Edit</a>
-                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete"></i>Delete</a>
+                                        <td> <a href="#editModal" class="edit" data-toggle="modal" style="margin-right: 10px;"><i-feather name="edit"></i-feather></a>
+                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i-feather name="trash"></i-feather></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -168,8 +168,8 @@
                                         <td class="d-none d-lg-table-cell">Roti</td>
                                         <td> <span class="badge badge-warning">Delayed</span>
                                         </td>
-                                        <td> <a href="#editModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit"></i>Edit</a>
-                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete"></i>Delete</a>
+                                        <td> <a href="#editModal" class="edit" data-toggle="modal" style="margin-right: 10px;"><i-feather name="edit"></i-feather></a>
+                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i-feather name="trash"></i-feather></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -180,8 +180,8 @@
                                         <td class="d-none d-lg-table-cell">Roti</td>
                                         <td> <span class="badge badge-warning">On Hold</span>
                                         </td>
-                                        <td> <a href="#editModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit"></i>Edit</a>
-                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete"></i>Delete</a>
+                                        <td> <a href="#editModal" class="edit" data-toggle="modal" style="margin-right: 10px;"><i-feather name="edit"></i-feather></a>
+                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i-feather name="trash"></i-feather></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -192,8 +192,8 @@
                                         <td class="d-none d-lg-table-cell">Subzi</td>
                                         <td> <span class="badge badge-success">Completed</span>
                                         </td>
-                                        <td> <a href="#editModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit"></i>Edit</a>
-                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete"></i>Delete</a>
+                                        <td> <a href="#editModal" class="edit" data-toggle="modal" style="margin-right: 10px;"><i-feather name="edit"></i-feather></a>
+                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i-feather name="trash"></i-feather></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -204,9 +204,8 @@
                                         <td class="d-none d-lg-table-cell">Starter</td>
                                         <td> <span class="badge badge-danger">Cancelled</span>
                                         </td>
-                                        <td> <a href="#editModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit"></i>Edit</a>
-                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete"></i>Delete</a>
-                                        </td>
+                                        <td><a href="#editModal" class="edit" data-toggle="modal" style="margin-right: 10px;"><i-feather name="edit"></i-feather></a>
+                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i-feather name="trash"></i-feather></a>
                                     </tr>
                                     <tr *ngFor="let item of data; let i = index">
                                         <td>24541</td>
@@ -216,8 +215,8 @@
                                         <td class="d-none d-lg-table-cell">{{item.category}}</td>
                                         <td> <span class="badge badge-danger">Cancelled</span>
                                         </td>
-                                        <td> <a href="#editModal" class="edit" data-toggle="modal" (click)="edit(i)"><i class="material-icons" data-toggle="tooltip" title="Edit" ></i>Edit</a>
-                                            <a href="#deleteModal" class="delete" data-toggle="modal" ><i class="material-icons" data-toggle="tooltip" title="Delete"></i>Delete</a>
+                                        <td> <a href="#editModal" class="edit" data-toggle="modal" style="margin-right: 10px;"><i-feather name="edit"></i-feather></a>
+                                            <a href="#deleteModal" class="delete" data-toggle="modal"><i-feather name="trash"></i-feather></a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -256,6 +255,10 @@
 						<label>Price</label>
 						<textarea class="form-control"  required="" name="price" [(ngModel)]="model.price"></textarea>
 					</div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Example file input</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
                    </form>
 				</div>
 				<div class="modal-footer">
@@ -287,6 +290,10 @@
 						<label>Price</label>
 						<textarea class="form-control" required="" name="price" [(ngModel)]="model.price"></textarea>
 					</div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Example file input</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
 				</div>
 				<div class="modal-footer">
 					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
